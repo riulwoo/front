@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+main{
+  padding:0%;
+}
+
+.pwWrap {
+width: 100%;
+/* max-width: 450px; */
+background: #dbf9ee;
+/* margin: 20px auto; */
+text-align: center;
+font-size: 16px;
+}
+
+.pwWrap .title {
+margin: -20px 0 -20px;
+}
+
+.pwWrap .title .inputKey{
+padding-top: 50px;
+}
+/* .pwWrap .title .inputKey{
+padding-top: 50px;
+} */
+.pwWrap .pwSection {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 209px;
+/* height: 200px; */
+/* height: 100%; */
+}
+
+.pwWrap .pwSection .dot {
+display: block;
+width: 30px;
+height: 30px;
+background: darkgrey;
+border-radius: 100%;
+margin: 0 15px;
+}
+
+.pwWrap .pwSection .dot.active {
+background: rgba(0, 0, 0, 0.7);
+}
+
+.pwWrap .pwSection .message {
+position: absolute;
+bottom: 5px;
+left: 0;
+z-index: 1;
+min-width: 100%;
+text-align: center;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: -0.03em;
+opacity: 0;
+transition: .2s ease-out;
+}
+
+.pwWrap .numberSection {
+overflow: visible; /*hidden*/
+}
+
+.pwWrap .numberSection .number {
+float: left;
+width: 33.33%;
+border: 1px solid rgba(0, 0, 0, 0);
+font-size: 2rem;
+padding: 26px 0;
+cursor: pointer;
+background: #FFFFFF;
+}

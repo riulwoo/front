@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>board-write</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button class="mb-3 btn btn-secondary back">< 뒤로가기</button>
+    <div class="mb-3 d-flex justify-content-between">
+    <h4>게시글 쓰기 / 수정 / 삭제</h4>
+    <span class="">
+        <button type="submit" class="btn btn-secondary m-1" id="apply">적용</button>
+        <button type="button" class="btn btn-secondary" id="remove">삭제</button>
+    </span>
+    </div>
+    <form class="apply">
+        <fieldset class="node" style="width:100%">
+            <input type="hidden" name="idx" value="">
+            <label class="mb-3 form-label">
+                카테고리
+                <select>
+                    <option>--카테고리 선택--</option>
+                    <option>계약등록/서류검토</option>
+                    <option>결제하기</option>
+                    <option>이용료/수수료</option>
+                    <option>송금안내</option>
+                    <option>취소/환불</option>
+                </select>
+                <input type="hidden" name="category" class="form-control" value="" readonly>
+
+            </label>
+            <div class="mb-3">
+                <label class="form-label">
+                    제목
+                    <input name="title" type="text" class="form-control" value="">
+                </label>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">
+                    내용
+                    <textarea name="contents" row="10"></textarea>
+                </label>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+<script src="index.js"></script>
+</html>
